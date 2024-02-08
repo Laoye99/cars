@@ -6,6 +6,13 @@ import Scroll from '../components/Scroll';
 import ErrorBoundary from "../components/ErrorBoundary";
 
 function App() {
+    // constructor() {
+    //     super()
+    //     this.state = {
+    //     cars: [],
+    //     searchfield: ''   
+    //     }
+    // }
     const [cars, setCars] = useState([]);
     const [searchfield, setSearchfield] = useState('');
     useEffect(()=> {

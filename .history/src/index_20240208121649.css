@@ -6,5 +6,5 @@ body {
 @font-face {
   font-family: "Modasite";
   src: url('./fonts/Modasite-2v7Wl.otf') format('opentype');
-  font-weight: bold;
+  font-weight: b;
 }

@@ -6,7 +6,7 @@ import Scroll from '../components/Scroll';
 import ErrorBoundary from "../components/ErrorBoundary";
 
 function App() {
-    const [cars, setCars] = useState([]);
+ars, setCars] = useState([]);
     const [searchfield, setSearchfield] = useState('');
     useEffect(()=> {
              fetch('https://my-json-server.typicode.com/Laoye99/cars/cars')

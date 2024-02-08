@@ -6,13 +6,26 @@ import Scroll from '../components/Scroll';
 import ErrorBoundary from "../components/ErrorBoundary";
 
 function App() {
+    // constructor() {
+    //     super()
+    //     this.state = {
+    //     cars: [],
+    //     searchfield: ''   
+    //     }
+    // }
     const [cars, setCars] = useState([]);
     const [searchfield, setSearchfield] = useState('');
+    // componentDidMount() {
+    //     fetch('https://my-json-server.typicode.com/Laoye99/cars/cars')
+    //     .then(response=> response.json())
+    //     .then(cars => this.setState({ cars: cars}));
+    //     }
+
     useEffect(()=> {
              fetch('https://my-json-server.typicode.com/Laoye99/cars/cars')
         .then(response=> response.json())
-        .then(cars => {setCars(cars)});
-    },[])
+        .then(cars => setCars({ cars: cars}));
+    })
 
     const onSearchChange = (event) => {
         setSearchfield( event.target.value)

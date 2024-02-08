@@ -3,8 +3,4 @@ body {
   padding: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.5) 0%, rgb(0, 0, 0,0.9) 100%);
 }
-@font-face {
-  font-family: "Modasite";
-  src: url('./fonts/Modasite-2v7Wl.otf') format('opentype');
-  font-weight: bold;
-}
+@f
